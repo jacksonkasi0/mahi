@@ -1,0 +1,186 @@
+
+
+/* button */
+
+
+.btn-wrapper {
+
+    text-align: center ;
+    padding-top: 250px;
+}
+
+.btn-wrapper .fire-btn {
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  color: #ff0000;
+  font-size: large;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: -webkit-transform ease 0.25s;
+  transition: -webkit-transform ease 0.25s;
+  transition: transform ease 0.25s;
+  transition: transform ease 0.25s, -webkit-transform ease 0.25s;
+  z-index: 1;
+  transition: .8s;
+
+  box-shadow: 0 0 5px #ff1c49;
+  text-shadow: 0 0 5px #6e6b6b;
+  transition: .8s;
+}
+
+.btn-wrapper :hover{
+
+   color: #fcfcfc;
+    box-shadow: 0 0 5px #ff6600;
+    text-shadow: 0 0 5px #000000;
+    transition: .8s;
+    background-color: #fa0240;
+}
+
+
+.btn-wrapper .fire-btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.btn-wrapper .fire-btn .icon {
+  margin-right: 0.5rem;
+}
+.btn-wrapper .particle {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform ease-in-out 0.5s;
+  transition: -webkit-transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+  background-color: #fb8c00;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root{
+  --text-color: rgb(252, 39, 85);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --btn-color: hsl(350, 80%, 42%);
+  --bg-color: #141218;
+}
+
+:root :hover{
+ 
+  --text-color: rgb(241, 241, 241);
+  
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --btn-color: hsl(0, 0%, 100%);
+  --bg-color: #141218;
+
+}
+
+:root :active{
+ 
+  --text-color: rgb(250, 250, 250);
+  
+}
+/* * {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+} */
+
+/* .fire-btn {
+  position:fixed;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+} */
+
+
+
+/* bubbles */
+body::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 60px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 30px),
+    radial-gradient(circle at 60% 5%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 8px, transparent 40px),
+    radial-gradient(circle at 38% 74%, transparent 0,  transparent 5px, var(--text-color) 3px, var(--text-color) 9px, transparent 90px),
+
+    radial-gradient(circle at 20% 54%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 20px),
+    radial-gradient(circle at 30% 20%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 8px, transparent 20px),
+    radial-gradient(circle at 60% 39%, transparent 0,  transparent 5px, var(--text-color) 3px, var(--text-color) 9px, transparent 40px),
+
+    radial-gradient(circle at 90% 54%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 6px, transparent 10px),
+    radial-gradient(circle at 70% 20%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 5px, transparent 40px),
+    radial-gradient(circle at 20% 39%, transparent 0,  transparent 5px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+
+
+    radial-gradient(circle at 10% 24%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 11px),
+    radial-gradient(circle at 60% 80%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 8px, transparent 10px),
+    radial-gradient(circle at 80% 31%, transparent 0,  transparent 5px, var(--text-color) 3px, var(--text-color) 9px, transparent 10px),
+
+    radial-gradient(circle at 30% 24%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 6px, transparent 10px),
+    radial-gradient(circle at 90% 2%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 5px, transparent 20px),
+    radial-gradient(circle at 50% 29%, transparent 0,  transparent 5px, var(--text-color) 3px, var(--text-color) 4px, transparent 40px),
+
+    radial-gradient(circle at 11% 5%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 38px),
+    radial-gradient(circle at 74% 84%, transparent 0,  transparent 5px, var(--text-color) 3px, var(--text-color) 7px, transparent 24px),
+    radial-gradient(circle at 9% 62%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 14px, transparent 40px);
+
+
+  width: 100%;
+  height: 300%;
+  /* top: 0;
+  left: 0; */
+  position: absolute;
+  animation: bubbles 7s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}

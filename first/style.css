@@ -1,0 +1,105 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    /* background-image:url(https://twimg0-a.akamaihd.net/a/1350072692/t1/img/front_page/jp-mountain@2x.jpg);
+
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+
+    height: 100%; */
+
+
+} 
+
+body{
+    
+    background: url(https://bit.ly/300Uzql)  ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+
+    height: 100%;
+    
+}
+
+
+.avatar-upload .avatar-edit {
+
+  text-align: end;
+  padding-top: 35vh;
+  padding-left: 80px;
+
+}
+
+
+
+.avatar-upload .avatar-edit input {
+  display: none;
+  
+}
+
+
+
+
+
+
+@media screen and (max-width: 450px) 
+{
+
+  .avatar-upload .avatar-edit input + label {
+
+    width: 90px;
+    height: 90px;
+  }
+
+}
+
+
+.avatar-upload  .avatar-edit a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  cursor: pointer;
+
+}
+
+.avatar-upload .avatar-edit a::before  {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(45deg,#eef112, #f85104);
+  border-radius: 50%;
+  z-index: -1;
+
+  display: inline-block;
+
+  transition: 0.3s ease-in;
+}
+
+.avatar-upload .avatar-edit a:hover::before  {
+  transform: scale(0);
+}
+
+.avatar-upload .avatar-edit a i {
+  transition: 0.3s ease-in;
+}
+
+.avatar-upload .avatar-edit a:hover i {
+  background: linear-gradient(45deg, #eef112, #f85104);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}

@@ -1,0 +1,84 @@
+body {
+
+    background: rgb(59,0,255);
+background: linear-gradient(52deg, rgba(59,0,255,1) 0%, rgba(221,13,130,1) 62%, rgba(251,0,111,1) 99%);
+
+    text-align: center;
+    font-family: "Montserrat";
+    margin: 0 auto;}
+    
+    #title {
+      width: 200px;
+      height: 150px;
+      margin-bottom: -45px;
+    }
+    
+    .header { 
+    background-color: #E04360;
+    color: white;
+
+    background: rgb(255,0,0);
+background: linear-gradient(43deg, rgba(255,0,0,1) 0%, rgba(251,0,208,1) 99%);
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;}
+    
+    h3 {color: #66101f;
+    opacity: 0.6;
+    margin-top: -40px;}
+    
+    h1 {color: #e8e8e8;
+    text-shadow: 2px 2px #747474;
+    margin-top: -10px;}
+    
+    #smallheart {
+      width: 20px;
+      opacity: 0.8;
+    }
+    
+    span {width: 100px;
+    margin: 100px;}
+    
+    p {margin: 20px 15%;}
+    
+    .body {background-color: #66101f;
+    padding: 10px;
+    margin-top: -20px;
+    color: white;
+    width: 80%;
+    margin: -20px auto 0 auto;}
+    
+    #result { color:white; font-size: 30px; width: 100px;
+    text-transform: bolded;
+    text-align: center; 
+    margin: 0 auto; }
+    
+    #result2 {
+      color: #ffffff;
+      font-size: 50px;
+      text-align: center; 
+      max-width: 1000vw;
+      text-shadow: 2px 2px rgba(23,1,1,0.2);
+    }
+    .otherbody {background-color: #fbdee6;
+    padding: 10px;;
+    margin-top: 30px;
+    color: black;
+    width: 70%;
+    margin: 10px auto 0 auto;
+    border: 1px solid grey;
+    }
+    #paragraph3 {
+      
+      font-family: "Montserrat";
+      font-size: 22px;
+      font-weight: 400;
+      text-align: justify;
+      font-style: italic;
+    }
+
+    .kasi{
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        box-sizing: 20px;
+    }
